@@ -24,6 +24,20 @@ module.exports = function (grunt) {
 		        }
 		      ]
 		    }
+		},
+		watch: {
+		    files: 'outline.md',
+		    tasks: ['markdown']
+		},
+		validation: {
+		    options: {
+		        reset: grunt.option('reset') || false,
+		        stoponerror: false,
+		        relaxerror: ['Bad value X-UA-Compatible for attribute http-equiv on element meta.'] //ignores these errors 
+		    },
+		    files: {
+		        src: 'index.html'
+		    }
 		}
 	});
 
@@ -32,7 +46,9 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.loadNpmTasks('grunt-markdown');
+	grunt.loadNpmTasks('grunt-html-validation');
+	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	// Default task
-	grunt.registerTask('default', ['uglify', 'markdown']);
+	grunt.registerTask('default', ['validation']);
 };
