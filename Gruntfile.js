@@ -45,7 +45,7 @@ module.exports = function (grunt) {
 			}
 		},
 		watch: {
-		    files: ['**/*'],
+		    files: ['index.html','css/main.css'],
 		    tasks: ['validation'],
 		    options: {
 		      livereload: true
