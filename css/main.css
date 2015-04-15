@@ -11,7 +11,7 @@
    ========================================================================== */
 body
 {
-    background-color: Gainsboro;
+    background-color: white;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
 }
@@ -35,7 +35,6 @@ cite
 {
     font-style: normal;
 }
-
 
 
 .main
@@ -161,6 +160,27 @@ cite
     color: white;
 }
 
+footer
+{
+    background: radial-gradient(#2c2c2c, #212121);
+    color: white;
+}
+
+footer a
+{
+    color: white;
+}
+
+footer > p
+{
+    color: #7a7a7a;
+}
+
+aside
+{
+    background: #3e3e3e;
+}
+
 
 
 h2
@@ -180,6 +200,13 @@ h3
 h4
 {
     font-size: 20px;
+    font-weight: 600;
+    color: DeepSkyBlue;
+}
+
+h5
+{
+    font-size: 17px;
     font-weight: 100;
     color: white; 
 }
