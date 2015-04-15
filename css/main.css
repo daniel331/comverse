@@ -31,6 +31,11 @@ header, nav
     background-color: white;
 }
 
+cite
+{
+    font-style: normal;
+}
+
 
 
 .main
@@ -39,17 +44,27 @@ header, nav
     background-attachment: fixed;
 }
 
-.main p
+.main p, .services p
 {
     color: white;
 }
 
 .btn
 {
-    background-color: #2793C9;
-    font-size: 14px;
+    background: #2793C9;
     color: white;
+    font-size: 14px;   
     border-radius: 5px;
+}
+
+.btn:after
+{
+    content: url('../img/btnArrow.png');  
+}
+
+.btn-transp
+{
+    background:rgba(32, 126, 160, 0.6);
 }
 
 .sticker
@@ -61,18 +76,17 @@ header, nav
 
 .pinkBg
 {
-    /*background-color: Fuchsia;*/
     background:rgba(244, 34, 139, 0.8);
 }
 
 .greenBg
 {
-    background:rgba(0, 255, 0, 0.8);
+    background:rgba(72, 196, 5, 0.8);
 }
 
 .orangeBg
 {
-    background:rgba(255, 140, 0, 0.8);
+    background:rgba(255, 102, 0, 0.8);
 }
 
 .sticker a
@@ -84,11 +98,69 @@ header, nav
 
 .services
 {
-    /*background: red;*/
-    /*background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(125,185,232,1)),
-        color-stop(88%,rgba(30,87,153,1)), color-stop(100%,rgba(30,87,153,1)));*/
-background: radial-gradient(#55b5d2, #2F8CBC);
+    background: radial-gradient(#55b5d2, #2F8CBC);
 }
+
+.services li:before
+{
+    content: url('../img/solution_icon_optimize-efficnt.png');
+}
+
+.events
+{
+    background-image: url(../img/news-and-events-bg.jpg);
+    background-attachment: fixed;
+}
+
+.news-event p
+{
+    background:rgba(255, 255, 255, 0.6);
+    border-radius: 3px;
+}
+
+.news-event a
+{
+    color: white;
+}
+
+.success
+{
+    background: #ececec;
+}
+
+.success *
+{
+    color: #565656;
+}
+
+.success li
+{
+    color: #565656;
+    background: white;
+    border-radius: 3px;
+}
+
+.success blockquote p:before
+{
+    content: url('../img/quote-grey.png');
+}
+
+.success blockquote p
+{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.citeName
+{
+    color: DeepSkyBlue;
+}
+
+.success a
+{
+    color: white;
+}
+
 
 
 h2
@@ -100,7 +172,7 @@ h2
 
 h3
 {
-    font-size: 25px;
+    font-size: 35px;
     font-weight: 100;
     color: white;
 }
@@ -116,10 +188,6 @@ b, strong
 {
   font-weight: 600;
 }
-
-
-
-
 
 
 
