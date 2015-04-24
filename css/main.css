@@ -211,6 +211,8 @@ nav button
     right: 5px;
 }
 
+/* Services section */
+
 .services
 {
     background: radial-gradient(#55b5d2, #2F8CBC);
@@ -276,24 +278,51 @@ nav button
     content: url('../img/solution_icon_biz-transform_hover.png');
 }
 
+.services li
+{
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+    top: 50px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.services li div
+{
+    margin: 0 auto;
+}
+
+.services p span
+{
+    display: block;
+}
+
 
 /* Events section */
 
 .events
 {
-    background-image: url(../img/news-and-events-bg.jpg);
+    background-image: url(../img/events-bg.jpg);
     background-attachment: fixed;
 }
 
-.news-event p
+.events li
 {
-    background:rgba(255, 255, 255, 0.6);
+    display: inline-block;
+    width: 300px;
+    margin-right: 25px;
+}
+
+.news-event article
+{
+    background: rgba(255, 255, 255, 0.6);
     border-radius: 3px;
 }
 
-.news-event p:hover
+.news-event article:hover
 {
-    background:rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
     border-radius: 3px;
 }
 
@@ -302,9 +331,38 @@ nav button
     color: white;
 }
 
+.date-box
+{
+    display: block;
+    background: #3399CC;
+    color: white;
+    width: 70px;
+    text-align: center;
+}
+
+.box-day
+{
+    font-size: 50px;
+    font-weight: 200;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom: dotted 1px;
+}
+
+.box-month
+{
+    font-size: 20px;
+    font-weight: 200;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    padding: 5px 0;
+}
+
 .news-icon:before
 {
+    position: relative;
     content: url('../img/eventListIconNews.png');
+    right: 7px;
 }
 
 
@@ -315,7 +373,9 @@ nav button
 
 .events-icon:before
 {
+    position: relative;
     content: url('../img/eventListIconEvents.png');
+    right: 7px;
 }
 
 .events-icon:hover:before
@@ -325,7 +385,9 @@ nav button
 
 .releases-icon:before
 {
+    position: relative;
     content: url('../img/eventListIconPress.png');
+    right: 7px;
 }
 
 .releases-icon:hover:before
