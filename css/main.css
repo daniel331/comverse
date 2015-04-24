@@ -82,9 +82,19 @@ nav button
     content: url('../img/btnArrow.png'); 
 }
 
+.btn:hover
+{
+    background: #379fd4;
+}
+
 .btn-transp
 {
     background:rgba(32, 126, 160, 0.6);
+}
+
+.btn-transp:hover
+{
+    background:rgba(64, 136, 160, 0.6);
 }
 
 .sticker
@@ -141,15 +151,68 @@ nav button
     background: radial-gradient(#55b5d2, #2F8CBC);
 }
 
-#data-mon-icon, #machine-icon, #over-icon, #cloud-icon, #managed-icon, #social-icon
+.data-mon-icon
+{
+    content: url('../img/solution_icon_biz-analitics.png');
+}
+
+.data-mon-icon:hover
+{
+    content: url('../img/solution_icon_biz-analitics_hover.png');
+}
+
+.machine-icon
+{
+    content: url('../img/solution_icon_diti-cx.png');
+}
+
+.machine-icon:hover
+{
+    content: url('../img/solution_icon_diti-cx_hover.png');
+}
+
+.over-icon
+{
+    content: url('../img/solution_icon_smart-money.png');
+}
+
+.over-icon:hover
+{
+    content: url('../img/solution_icon_smart-money_hover.png');
+}
+
+.cloud-icon
 {
     content: url('../img/solution_icon_optimize-efficnt.png');
 }
 
-#data-mon-icon:hover, #machine-icon:hover, #over-icon:hover, #cloud-icon:hover, #managed-icon:hover, #social-icon:hover
+.cloud-icon:hover
 {
     content: url('../img/solution_icon_optimize-efficnt_hover.png');
 }
+
+.managed-icon
+{
+    content: url('../img/solution_icon_personal.png');
+}
+
+.managed-icon:hover
+{
+    content: url('../img/solution_icon_personal_hover.png');
+}
+
+.social-icon
+{
+    content: url('../img/solution_icon_biz-transform.png');
+}
+
+.social-icon:hover
+{
+    content: url('../img/solution_icon_biz-transform_hover.png');
+}
+
+
+/* Events section */
 
 .events
 {
@@ -173,6 +236,44 @@ nav button
 {
     color: white;
 }
+
+.news-icon:before
+{
+    content: url('../img/eventListIconNews.png');
+}
+
+
+.news-icon:hover:before
+{
+    content: url('../img/eventListIconNews_hover.png');
+}
+
+.events-icon:before
+{
+    content: url('../img/eventListIconEvents.png');
+}
+
+.events-icon:hover:before
+{
+    content: url('../img/eventListIconEvents_hover.png');
+}
+
+.releases-icon:before
+{
+    content: url('../img/eventListIconPress.png');
+}
+
+.releases-icon:hover:before
+{
+    content: url('../img/eventListIconPress_hover.png');
+}
+
+.news-icon:hover, .events-icon:hover, .releases-icon:hover
+{
+    color: black;
+}
+
+/* Success stories section */
 
 .success
 {
