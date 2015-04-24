@@ -22,7 +22,7 @@ body
     font-size: 16px;
 }
 
-body > *
+body > header, body > article, body > footer
 {
     display: block;
     width: 100%;
