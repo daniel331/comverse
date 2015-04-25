@@ -242,10 +242,11 @@ nav button span
 
 .services
 {
-    background: radial-gradient(#55b5d2, #2F8CBC);
     width: 100%;
     padding-top: 10px;
     padding-bottom: 50px;
+    background: url("../img/weDoBG.png"),
+                radial-gradient(#59BEDB 0%, #3399CC 100%);
 }
 
 .data-mon-icon
@@ -484,8 +485,9 @@ nav button span
 
 footer
 {
-    background: radial-gradient(#2c2c2c, #212121);
     color: white;
+    background-image: url("../img/footerBG.png"),
+                      radial-gradient(white 0%, transparent 100%);
 }
 
 footer a
