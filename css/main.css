@@ -54,12 +54,6 @@ header > div
     float: right;
 }
 
-header > *
-{
-
-
-}
-
 header, nav
 {
     background-color: white;
@@ -100,15 +94,48 @@ nav button
 {
     border: none;
     background: none;
+    cursor: pointer;
+    position: relative;
+    right: 28px;
 }
 
+nav button span
+{
+    content: url('../img/searchBtn.png');
+}
+
+.center
+{
+    margin: 0 auto;
+}
+
+.text-center
+{
+    text-align: center;
+}
+
+/* Main (banner) section */
 
 .main
 {
+    display: block;
     background-image: url(../img/slide-bg-complexity.jpg);
     background-attachment: fixed;
     padding-top: 80px;
     padding-bottom: 5px;
+}
+
+.main > div
+{
+    width: 50%;
+}
+
+.main > div > h2,
+.main > div > p,
+.main > div > a
+{
+    width: 50%;
+    margin-left: 40px;
 }
 
 .main p, .services p
@@ -216,6 +243,9 @@ nav button
 .services
 {
     background: radial-gradient(#55b5d2, #2F8CBC);
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 50px;
 }
 
 .data-mon-icon
@@ -278,22 +308,34 @@ nav button
     content: url('../img/solution_icon_biz-transform_hover.png');
 }
 
+.data-mon-icon,
+.machine-icon,
+.over-icon,
+.cloud-icon,
+.managed-icon,
+.social-icon
+{
+    display: block;
+    position: relative;
+    margin-bottom: 10px;
+}
+
 .services li
 {
     display: inline-block;
     margin-right: 20px;
     position: relative;
-    top: 50px;
     text-align: center;
-    vertical-align: middle;
+    vertical-align: top;
+    margin-bottom: 30px;
 }
 
-.services li div
+.services a
 {
-    margin: 0 auto;
+    color: white;
 }
 
-.services p span
+.services li span
 {
     display: block;
 }
