@@ -9,6 +9,7 @@
 /* ==========================================================================
    Daniel's custom styles
    ========================================================================== */
+
 html
 {
     box-sizing: border-box;
@@ -113,6 +114,7 @@ nav button span
 {
     text-align: center;
 }
+
 
 /* Main (banner) section */
 
@@ -238,6 +240,7 @@ nav button span
     right: 5px;
 }
 
+
 /* Services section */
 
 .services
@@ -348,10 +351,14 @@ nav button span
 {
     background-image: url(../img/events-bg.jpg);
     background-attachment: fixed;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    cursor: pointer;
 }
 
-.events li
+.news-event
 {
+    text-align: left;
     display: inline-block;
     width: 300px;
     margin-right: 25px;
@@ -361,6 +368,14 @@ nav button span
 {
     background: rgba(255, 255, 255, 0.6);
     border-radius: 3px;
+    padding: 15px;
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+
+.news-event article p
+{
+    margin-top: 0;
 }
 
 .news-event article:hover
@@ -401,13 +416,28 @@ nav button span
     padding: 5px 0;
 }
 
+.events .date-box
+{
+    display: block;
+    float: left;
+    clear: both;
+    margin-right: 15px;
+}
+
+.news-icon,
+.events-icon,
+.releases-icon
+{
+    position: relative;
+    left: 7px; 
+}
+
 .news-icon:before
 {
     position: relative;
     content: url('../img/eventListIconNews.png');
     right: 7px;
 }
-
 
 .news-icon:hover:before
 {
