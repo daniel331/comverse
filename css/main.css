@@ -122,6 +122,7 @@ nav button span
 {
     display: block;
     background-image: url(../img/slide-bg-complexity.jpg);
+    background-size: 120%;
     background-attachment: fixed;
     padding-top: 80px;
     padding-bottom: 5px;
@@ -191,6 +192,7 @@ nav button span
     width: 250px;
     height: 150px;
     margin-right: 30px;
+    cursor: pointer;
 }
 
 .pinkBg
@@ -350,7 +352,9 @@ nav button span
 .events
 {
     background-image: url(../img/events-bg.jpg);
+    background-size: 170%;
     background-attachment: fixed;
+    background-position: bottom;
     padding-top: 10px;
     padding-bottom: 50px;
     cursor: pointer;
