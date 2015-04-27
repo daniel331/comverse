@@ -125,7 +125,7 @@ nav button span
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: auto;
-    background-position: center;
+    background-position: center 0px;
     padding-top: 10px;
     padding-bottom: 5px;
 }
@@ -675,9 +675,12 @@ nav button span
 
 footer
 {
+    display: block;
+    font-size: 13.5px;
     color: white;
     background-image: url("../img/footerBG.png"),
                       radial-gradient(white 0%, transparent 100%);
+   /* vertical-align: top;*/
 }
 
 footer a
@@ -690,12 +693,49 @@ footer > p
     color: #7a7a7a;
 }
 
+footer ol
+{
+    display: block;
+    position: relative;
+    margin: 0;
+}
+
 aside
 {
+    display: block;
+    position: relative;
     background: #3e3e3e;
+    width: 300px;
+    padding: 15px;
+}
+
+.foot-col
+{
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    vertical-align: top;
+    margin: 0 10px;
+}
+
+footer ul
+{
+    padding: 0;
+}
+
+footer h5
+{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+footer h4
+{
+    margin: 0;
 }
 
 
+/* General */
 
 h2
 {   
@@ -720,8 +760,8 @@ h4
 
 h5
 {
-    font-size: 17px;
-    font-weight: 100;
+    font-size: 15px;
+    font-weight: 300;
     color: white; 
 }
 
