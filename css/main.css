@@ -122,8 +122,10 @@ nav button span
 {
     display: block;
     background-image: url(../img/slide-bg-complexity.jpg);
-    background-position: center;
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
     padding-top: 10px;
     padding-bottom: 5px;
 }
