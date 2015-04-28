@@ -50,11 +50,6 @@ header
     left: 0;
 }
 
-header > div
-{
-    float: right;
-}
-
 header, nav
 {
     background-color: white;
@@ -62,17 +57,73 @@ header, nav
     vertical-align: bottom;
 }
 
-nav li
+nav ul
 {
-    position: relative;
     display: inline-block;
-    margin-right: 20px;
+    margin: 0;
+    padding: 0;
+    position: relative;
 }
 
-nav > *
+.nav > li
 {
-   display: inline-block;
+    float: left;
+    list-style: none;
 }
+
+.nav > li a
+{
+    color: black;
+    display: block;
+    text-align: center;
+    line-height: 30px;
+    width: 160px;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus
+{
+    background-color: #FCFCFC;
+    border: 1px solid #D5D5D5;
+    color: #3399CC;
+    border-bottom: none;
+}
+
+.nav > li > ul
+{
+    border: 1px solid #D5D5D5;
+    border-top: none;
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+}
+
+.nav ul a
+{
+    background-color: #FCFCFC;
+    width: 100%;
+}
+
+.nav ul a:hover,
+.nav ul a:focus
+{
+    color: #3399CC;
+}
+
+.nav > li:hover > ul
+{
+    display: block;
+}
+
+.nav div
+{
+    position: absolute;
+    bottom: 60px;
+    right: 30px;
+}
+
 
 cite
 {
@@ -89,11 +140,16 @@ header > img
     margin: 15px;
 }
 
+nav form
+{
+   margin-left: 30px;
+}
+
 nav input
 {
     border: solid 1px LightGray;
-    border-radius: 5px;
-    top: 30px;
+    border-radius: 7px;
+    line-height: 20px;
 }
 
 nav button
