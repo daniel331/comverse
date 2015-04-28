@@ -680,7 +680,6 @@ footer
     color: white;
     background-image: url("../img/footerBG.png"),
                       radial-gradient(white 0%, transparent 100%);
-   /* vertical-align: top;*/
 }
 
 footer a
@@ -700,26 +699,30 @@ footer ol
     margin: 0;
 }
 
+footer ul li
+{
+    margin-bottom: 6px;
+}
+
 aside
 {
     display: block;
     position: relative;
     text-align: center;
     background: rgba(255, 255, 255, 0.1);
-    height: 250px;
-    width: 230px;
+    height: 300px;
+    width: 240px;
     padding: 15px;
     font-size: 17px;
 }
 
 .footer-event-desc
 {
-    display: block;
+    display: inline-block;
     position: relative;
-    float: right;
     text-align: left;
-    padding-left: 70px;
-    margin-top: -10px;
+    padding-left: 20px;
+    width: 170px;
 }
 
 .foot-col
@@ -729,7 +732,7 @@ aside
     text-align: left;
     vertical-align: top;
     height: 100%;
-    margin: 0 10px;
+    margin: 0 20px;
 }
 
 footer ul
@@ -750,10 +753,8 @@ footer h4
 
 .footer-date-box
 {
-    display: block;
+    display: inline-block;
     position: relative;
-    float: left;
-    clear: left;
     text-align: center;
     width: 50px;
     bottom: 8px;
@@ -761,12 +762,15 @@ footer h4
 
 .footer-date-box-day
 {
+    float: left;
     font-size: 40px;
     font-weight: 500px;
 }
 
 .footer-date-box-month
 {
+    float: left;
+    clear: left;
     margin-top: -10px;
     font-size: 22px;
     font-weight: 400px;
@@ -777,6 +781,86 @@ footer hr
     clear: both;
 }
 
+
+.subscr input
+{
+    border: solid 0;
+    line-height: 25px;
+    border-radius: 3px;
+    width: 225px;
+    padding-left: 7px;
+}
+
+.subscr button
+{
+    color: white;
+    background: #3399CC;
+    border: none;
+    color: white;
+    font-size: 14px;   
+    border-radius: 3px;
+    line-height: 25px;
+    margin-left: -73px;
+    cursor: pointer;
+}
+
+.subscr form
+{
+    display: inline-block;
+}
+
+.subscr form
+{
+    margin-top: 15px;
+}
+
+.yt-soc-icon
+{
+    content: url('../img/socialMenuIcon-youtube.png');
+    float: left;
+    margin: 5px;
+    margin-top: 70px;
+}
+
+.yt-soc-icon:hover
+{
+    content: url('../img/socialMenuIcon-youtube_hover.png');
+}
+
+.tw-soc-icon
+{
+    content: url('../img/socialMenuIcon-twitter.png');
+    float: left;
+    margin: 5px;
+    margin-top: 70px;
+}
+
+.tw-soc-icon:hover
+{
+    content: url('../img/socialMenuIcon-twitter_hover.png');
+}
+
+.in-soc-icon
+{
+    content: url('../img/socialMenuIcon-linkdin.png');
+    float: left;
+    margin: 5px;
+    margin-top: 70px;
+}
+
+.in-soc-icon:hover
+{
+    content: url('../img/socialMenuIcon-linkdin_hover.png');
+}
+
+footer > p
+{
+    text-align: center;
+    float: left;
+    margin-top: -30px;
+    margin-bottom: 0;
+    margin-left: 10px;
+}
 
 /* General */
 
