@@ -197,8 +197,14 @@ nav button span
     width: 950px;
 }
 
-.main > div > h2,
-.main > div > p,
+.main p, .services p
+{
+    color: white;
+    margin: 5px;
+}
+
+.top-wrap > h2,
+.top-wrap > p,
 .main > div > a
 {
     width: 50%;
@@ -208,12 +214,6 @@ nav button span
 .main h2
 {
     margin-bottom: 0px;
-}
-
-.main p, .services p
-{
-    color: white;
-    margin: 5px;
 }
 
 .btn
@@ -268,6 +268,11 @@ nav button span
     margin-right: 5px;
     border-radius: 3px;
     cursor: pointer;
+}
+
+.slide-num
+{
+    display: none;
 }
 
 .slide-btn:nth-of-type(1)
@@ -1128,6 +1133,12 @@ b, strong
 
 @media all and (max-width:768px)
 {
+    h2
+    {
+        font-size: 33px;
+    }
+
+
     header img
     {
         content: url('../img/comverse-logo-medium.png');
@@ -1143,9 +1154,109 @@ b, strong
         display: block;
     }
 
+
+/*--------------------------------------*/
+
+
+    .main
+    {
+        padding-top: 0;
+    }
+
+    .top-wrap
+    {
+        background: url("../img/weDoBG.png"),
+                radial-gradient(rgba(89, 190, 219, 0.9) 0%, rgba(51, 153, 204, 0.9) 100%);
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .main > div
+    {
+        width: 100%;
+    }
+
+    .top-wrap > h2,
+    .top-wrap > p,
+    .main > div > a
+    {
+        width: 80%;
+        margin-left: 10px;
+    }
+
+    .top-wrap > h2
+    {
+        margin-top: 0;
+    }
+
+    .top-wrap
+    {
+        background: url("../img/weDoBG.png"),
+                radial-gradient(rgba(89, 190, 219, 0.9) 0%, rgba(51, 153, 204, 0.9) 100%);
+    }
+
+    .main .btn
+    {
+        margin-bottom: 150px;
+        width: 110px;
+    }
+
+    .slide-cont
+    {
+        padding-left: 10px;
+    }
+
+    .slide-btn
+    {
+        height: 30px;
+        width: 30px;
+    }
+
+    .slide-num
+    {
+        display: block;
+        text-align: center;
+        padding-top: 3px;
+        color: #565656;
+    }
+
+    .slide-btn:nth-of-type(1) > .slide-num
+    {
+        color: white;
+    }
+
+
+    .sticker-list
+    {
+        padding: 0;
+    }
+
+    .sticker
+    {
+        border-radius: 0;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .sticker > p
+    {
+        width: 80%
+    }
+
+/*---------------------------------------*/
+
+    .services ul
+    {
+        padding-left: 0px;
+    }
+
+    .services li
+    {
+        margin-right: 0;
+        margin-left: 0;
+        width: 32%;
+    }
     
-
-
 
 
 }
