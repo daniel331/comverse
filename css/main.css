@@ -189,7 +189,7 @@ nav button span
     background-size: auto;
     background-position: center 0px;
     padding-top: 10px;
-    padding-bottom: 5px;
+    padding-bottom: 20px;
 }
 
 .main > div
@@ -283,6 +283,7 @@ nav button span
 
 .sticker
 {
+    position: relative;
     font-size: 20px;
     font-weight: 300;
     border-radius: 5px;
@@ -296,6 +297,7 @@ nav button span
     margin-right: 30px;
     margin-top: 40px;
     cursor: pointer;
+    vertical-align: top;
 }
 
 .pinkBg
@@ -330,11 +332,12 @@ nav button span
 
 .sticker a
 {
-    position: relative;
+    position: absolute;
     color: white;
     font-size: 13px;
     font-weight: 600;
     margin-left: 5px;
+    bottom: 12px;
 }
 
 .sticker a:before
@@ -1222,6 +1225,25 @@ input[type=checkbox]
    Media Queries
    ========================================================================== */
 
+@media all and (max-width:991px)
+{
+    .main > div
+    {
+        width: 100%;
+    }
+
+    .sticker
+    {
+        width: 28%;
+        margin-right: 10px;
+        font-size: 16.5px;
+        vertical-align: top;
+        padding-bottom: 10px;
+    }
+}
+
+
+
 @media all and (max-width:768px)
 {
     h2
@@ -1247,7 +1269,6 @@ input[type=checkbox]
 
 
 /*--------------------------------------*/
-
 
     .main
     {
@@ -1319,19 +1340,47 @@ input[type=checkbox]
 
     .sticker-list
     {
+        position: relative;
         padding: 0;
     }
 
     .sticker
     {
+        position: relative;
+        font-size: 24px;
         border-radius: 0;
-        width: 100%;
+        width: 98%;
         margin-top: 10px;
+        margin-right: 0px;
+        padding-left: 2%; 
+        padding-right: 0;
+    }
+
+    .greenBg
+    {
+        font-size: 20px;
+    }
+
+    .sticker a
+    {
+        font-size: 16px;
+        bottom: 15px;
+        margin-left: 10px;
     }
 
     .sticker > p
     {
-        width: 80%
+        width: 75%
+    }
+
+    .sticker::before
+    {
+        position: relative;
+        content: url('../img/promotion-item-arrow.png');
+        float: right;
+        top: 45px;
+        right: 15px;
+        
     }
 
 /*---------------------------------------*/
