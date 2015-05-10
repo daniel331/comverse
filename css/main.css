@@ -695,6 +695,11 @@ nav button span
     color: white;
 }
 
+.success ul
+{
+    padding: 0;
+}
+
 .suc-col-1 .ceo-img
 {
     content: url('../img/CB-JP-face.png');
@@ -1408,7 +1413,9 @@ input[type=checkbox]
     .news-event
     {
         width: 90%;
-        margin-left: 20px;
+        margin-left: 5%;
+        margin-left: 5%;
+
     }
     
 /*---------------------------------------*/
